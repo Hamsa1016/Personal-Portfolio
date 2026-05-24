@@ -1021,122 +1021,123 @@ box-shadow:0 6px 18px rgba(0,0,0,0.08);
    MOBILE RESPONSIVE
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width:768px){
+
 body{
     overflow-x:hidden;
 }
-    /* NAVBAR */
-    .navbar{
-        flex-direction: column;
-        padding: 20px;
-        gap: 15px;
-    }
 
-    .nav-links{
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
+.navbar{
+    flex-direction:column;
+    padding:20px 15px;
+    gap:15px;
+}
 
-    .nav-links a{
-        font-size: 14px;
-    }
+.logo{
+    font-size:28px;
+}
 
-    /* HERO SECTION */
-    .hero{
-        flex-direction: column;
-        padding: 40px 20px;
-        text-align: center;
-    }
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+}
 
-    .hero-text-card{
-        width: 100%;
-    }
+.nav-links a{
+    font-size:15px;
+}
 
-    .hero h1{
-        font-size: 38px;
-    }
+.hero{
+    flex-direction:column;
+    padding:40px 20px;
+    text-align:center;
+}
 
-    .hero h2{
-        font-size: 20px;
-    }
+.hero-text-card{
+    width:100%;
+    padding:25px;
+}
 
-    .hero-image img{
-        width: 100%;
-        margin-top: 30px;
-    }
+.hero-text-card h1{
+    font-size:38px;
+}
 
-    /* STATS */
-    .hero-stats{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+.hero-text-card h2{
+    font-size:22px;
+}
 
-    /* ABOUT SECTION */
-    .about{
-        padding: 50px 20px;
-    }
+.hero-image img{
+    width:100%;
+    height:auto;
+}
 
-    .about-container{
-        display:flex;
-    gap:40px;
-    align-items:flex-start;
-    }
+.hero-stats{
+    justify-content:center;
+}
 
-    .about-right{
- display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 25px;
-    }
+.about,
+.skills,
+.projects,
+.certifications,
+.contact{
+    padding:60px 20px;
+}
+
+.about-container{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.about-right{
+    position:static;
+    width:100%;
+    margin-top:20px;
+    box-shadow:none;
+}
+
 .about-right .card{
-    width: 100%;
-    position: relative;
-    z-index: 1;
+    width:100%;
 }
-.about-left{
-    width: 100%;
+
+.glass-skills{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
 }
-    .card{
-        width: 100%;
-        margin-bottom: 15px;
-    }
 
-    /* SKILLS */
-    .glass-skills{
-        grid-template-columns: repeat(2,1fr);
-        gap: 15px;
-    }
+.glass-card{
+    width:100%;
+    height:150px;
+}
 
-    /* PROJECTS */
-    .projects-container{
-           grid-template-columns: repeat(2,1fr);
-    gap: 15px;
-    }
+.projects-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
 
-    .project-card{
-        width: 100%;
-    }
+.project-card{
+    width:100%;
+}
 
-    /* CERTIFICATIONS */
-    .cert-container{
-        grid-template-columns: 1fr;
-    }
+.cert-container{
+    grid-template-columns:1fr;
+}
 
-    /* CONTACT */
-    .contact-container{
-        flex-direction: column;
-    }
+.cert-card{
+    width:100%;
+}
 
-    .contact-info,
-    .contact-form{
-        width: 100%;
-    }
+.contact-container{
+    flex-direction:column;
+}
 
-    /* HEADINGS */
-    .section-heading,
-    .cert-heading{
-        font-size: 38px;
-    }
+.section-heading,
+.cert-heading{
+    font-size:32px;
+    margin-top:0;
+}
 
 }
