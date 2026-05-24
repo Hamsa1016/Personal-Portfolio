@@ -1118,9 +1118,10 @@ body{
 }
 
 .project-card{
-    width:100% !important;
+    width: 400px;
     max-width:100% !important;
     min-width:0 !important;
+    width: 400px;
 }
 
 .project-card img{
