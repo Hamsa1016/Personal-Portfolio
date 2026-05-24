@@ -1180,20 +1180,3 @@ body{
 }
 
 }
-@media screen and (max-width:768px){
-
-.projects{
-    display:grid !important;
-    grid-template-columns:repeat(2,1fr) !important;
-    gap:10px !important;
-    padding:0 10px !important;
-}
-
-.project-card{
-    width:auto !important;
-    max-width:none !important;
-    min-width:0 !important;
-    margin:0 !important;
-}
-
-}
