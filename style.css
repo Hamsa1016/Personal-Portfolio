@@ -1137,14 +1137,14 @@ body{
     display:grid !important;
     grid-template-columns:1fr 1fr !important;
     gap:10px;
-    height:50px;
+    
 }
 
 .project-card{
     width:100% !important;
     max-width:100% !important;
     min-width:0 !important;
-    height:50px;
+    
 }
 
 .project-card img{
