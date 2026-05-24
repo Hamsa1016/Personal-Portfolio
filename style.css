@@ -1182,14 +1182,16 @@ body{
 }
 @media screen and (max-width:768px){
 
-.view-more{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
+.projects-container{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
     gap:12px;
 }
-.view-more .project-card{
-    width:100%;
-    min-width:0;
-    max-width:100%;
+
+.project-card{
+    width:100% !important;
+    max-width:100% !important;
+    min-width:0 !important;
 }
+
 }
