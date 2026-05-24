@@ -385,7 +385,7 @@ box-shadow:0 6px 18px rgba(0,0,0,0.08);
     box-shadow:0 8px 20px rgba(0,0,0,0.08);
      display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:space-between;  
 
     min-height:350px;
 }
@@ -1182,16 +1182,18 @@ body{
 }
 @media screen and (max-width:768px){
 
-.projects .projects-container{
+.projects{
     display:grid !important;
-    grid-template-columns:1fr 1fr !important;
-    gap:12px !important;
+    grid-template-columns:repeat(2,1fr) !important;
+    gap:10px !important;
+    padding:0 10px !important;
 }
 
-.projects .project-card{
-    width:100% !important;
+.project-card{
+    width:auto !important;
+    max-width:none !important;
     min-width:0 !important;
-    max-width:100% !important;
+    margin:0 !important;
 }
 
 }
