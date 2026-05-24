@@ -1120,7 +1120,7 @@ body{
 }
 
 .project-card{
-    min-width: 0;
+    width:100px;
     border-radius:14px;
 }
 
