@@ -1022,7 +1022,9 @@ box-shadow:0 6px 18px rgba(0,0,0,0.08);
 ========================= */
 
 @media (max-width: 768px) {
-
+body{
+    overflow-x:hidden;
+}
     /* NAVBAR */
     .navbar{
         flex-direction: column;
@@ -1076,14 +1078,25 @@ box-shadow:0 6px 18px rgba(0,0,0,0.08);
     }
 
     .about-container{
-        flex-direction: column;
+        display:flex;
+    gap:40px;
+    align-items:flex-start;
     }
 
     .about-right{
-        width: 100%;
-        margin-top: 25px;
+ display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
     }
-
+.about-right .card{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.about-left{
+    width: 100%;
+}
     .card{
         width: 100%;
         margin-bottom: 15px;
@@ -1097,7 +1110,8 @@ box-shadow:0 6px 18px rgba(0,0,0,0.08);
 
     /* PROJECTS */
     .projects-container{
-        grid-template-columns: 1fr;
+           grid-template-columns: repeat(2,1fr);
+    gap: 15px;
     }
 
     .project-card{
